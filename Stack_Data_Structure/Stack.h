@@ -16,7 +16,9 @@ public:
     Stack();
     ~Stack();
 
-    bool has_at_least(int nodes_amount);
+    bool top_exists();
+    bool is_empty();
+    bool has_at_least(int);
 
     // --------- Metodos basicos --------- //
     void push(float);
