@@ -20,13 +20,13 @@ public:
     bool is_empty();
     bool has_at_least(int);
 
-    // --------- Metodos basicos --------- //
+    // --------- Basic methods --------- //
     void push(float);
     void drop();
     float top();
     float pop();
 
-    // --------- Metodos de manejo --------- //
+    // --------- Management methods --------- //
     void swap();
     void dup();
     void depth();
@@ -37,9 +37,9 @@ public:
     void rollu();
     void clear();
 
-    // --------- Metodos de operacion --------- //
-    // todos contemplan al ultimo nodo como el segundo en la operacion porque la pila funciona en post-orden
-    // para todos los metodos, los dos ultimos nodos se eliminan y se coloca el resultado del valor
+    // --------- Operation methods --------- //
+    // Since stacks work in post order, the next method the top node will be the second number in the operations
+    // therefore for the stack: 3(top) - 4 - 2 if the subtract method is called then this will happen: 4 - 3 resulting in: 1
     void add();
     void sub();
     void div();
