@@ -135,6 +135,9 @@
     <ClInclude Include="Stack.h" />
     <ClInclude Include="StackNode.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Interpreter.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
