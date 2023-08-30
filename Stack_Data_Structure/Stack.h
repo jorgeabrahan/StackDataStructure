@@ -21,21 +21,21 @@ public:
     bool has_at_least(int);
 
     // --------- Basic methods --------- //
-    void push(float);
-    void drop();
-    float top();
-    float pop();
+    void push(float);   // add top node
+    void drop();        // remove top node
+    float top();        // return top node
+    float pop();        // remove and return top node
 
     // --------- Management methods --------- //
-    void swap();
-    void dup();
-    void depth();
-    void pick();
-    void dupn();
-    void dropn();
-    void rolld();
-    void rollu();
-    void clear();
+    void swap();        // swap top nodes
+    void dup();         // duplicate top nodes
+    void depth();       // add nodes amount as top node
+    void pick();        // copies specified node and paste it at the top
+    void dupn();        // duplicates n nodes at the top of the stack
+    void dropn();       // removes n nodes from the top of the stack
+    void rolld();       // rolls a node down
+    void rollu();       // rolls a node up
+    void clear();       // clears the stack
 
     // --------- Operation methods --------- //
     // Since stacks work in post order, the next method the top node will be the second number in the operations
