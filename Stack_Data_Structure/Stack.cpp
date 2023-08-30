@@ -1,5 +1,8 @@
-#include "Stack.h"
+#include <iostream>
 #include "StackNode.h"
+#include "Stack.h"
+
+using namespace std;
 
 Stack::Stack() {
     top_node = NULL;
@@ -11,7 +14,7 @@ Stack::~Stack() {
 }
 
 bool Stack::top_exists() {
-    return top != NULL;
+    return top_node != NULL;
 }
 
 bool Stack::is_empty() {
@@ -169,8 +172,14 @@ void Stack::pot() {
 
 ostream& operator<<(ostream& output, Stack& stack) {
     if (stack.is_empty()) output << "Stack is empty!";
-    for (StackNode* tmp = stack.top_node; tmp != NULL; tmp = tmp->next) {
-        output << tmp->data << ", ";
+    int position_counter = 1;
+    for (StackNode* temporal = stack.top_node; temporal != NULL; temporal = temporal->next) {
+        output << temporal->data;
+        if (position_counter == 1) output << " <-- top";
+        if (temporal->next == NULL) output << " <-- tail";
+        output << endl;
+        position_counter++;
     }
+    output << endl;
     return output;
 }

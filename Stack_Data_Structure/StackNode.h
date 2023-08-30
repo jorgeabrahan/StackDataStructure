@@ -1,6 +1,9 @@
+#pragma once
+#include <iostream>
 class Stack;
 
-#pragma once
+using namespace std;
+
 class StackNode {
 private:
     float data;
