@@ -1,0 +1,1 @@
+>>,>>,>>,<<,2,dupn,swap,2,pot,div,4,rolld,3,rolld,add,swap,div,<<
