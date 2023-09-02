@@ -1,1 +1,1 @@
->>,>>,>>,<<,2,dupn,swap,2,pot,div,4,rolld,3,rolld,add,swap,div,<<
+2 8 SHOW >> >> SHOW 3 SHOW ROLLD SHOW + SHOW DEPTH SHOW ROLLD SHOW * SHOW SWAP SHOW - SHOW
